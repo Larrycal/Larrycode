@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS与OC交互</title>
+</head>
+<body>
+    <br /><br /><br /><br />
+    <!-- 创建一个按钮，点击就调用  printHelloWorld()  方法 -->
+    <button onclick="printHelloWorld()">在Xcode控制台打印HelloWold</button>
+    <br /><br /><br /><br />
+    <!-- 创建一个按钮，点击就调用  printData(参数A,参数B)  方法 -->
+    <button onclick="printData('A','B')">在Xcode控制台打印A和B</button>
+    <!--  定义js函数  -->
+    <script type="text/javascript">
+        function test1()
+        {
+            alert("我是被OC调用的js方法")
+        }
+    </script>
+    <!--  定义js函数  -->
+    <script type="text/javascript">
+        function test2(a,b)
+        {
+            alert("参数A：" + a + "    参数B：" + b)
+        }
+    </script>
+</body>
+</html>
