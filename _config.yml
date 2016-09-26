@@ -1,7 +1,7 @@
 # Site
-title:              代码成诗
-bio:                '一年,   完成写诗之路'
-description:        "善攻者必善守，而善守者，藏于九地之下"
+title:              Moon
+bio:                'Minimal, one column jekyll theme.'
+description:        "Moon is a minimal, one column jekyll theme for your blog."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
