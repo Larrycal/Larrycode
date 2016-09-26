@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              代码成诗
+bio:                '吹灭读书灯  一身都是月'
+description:        "善攻者必善守，而善守者，藏于九地之下"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                http://taylantatli.me/Moon
+url:                https://larrycal.github.io/Larrycode/
 
 # Jekyll
 permalink:          /:title/
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   这个在_config.yml的comments中
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -37,19 +37,19 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github:             username
+email:              449618602@qq.com
+twitter:            Ff_7Seconds
+facebook:           lyk82465@gmail.com
+github:             larrycal
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
-instagram:          username
+#nstagram:          username
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#team:              username
 #dribbble:          username
 #youtube:           username
 #soundcloud:        username
