@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 关于柳钰柯
-tags: [about]
-date: 2016-09-26
+title: About the Theme
+tags: [about, Jekyll, theme, moon]
+date: 2016-03-21
 comments: false
 ---
     
