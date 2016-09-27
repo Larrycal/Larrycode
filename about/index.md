@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
+title: 关于柳钰柯
+tags: [about,contact, ]
 date: 2016-03-21
 comments: false
 ---
@@ -10,6 +10,9 @@ comments: false
 
 ## 说明
 * 内容均为自己一些学习心得，可能会有所错误，仅供参考。如果有问题欢迎指出，欢迎探讨。
+
+## 联系
+* 联系请点击首页邮箱、Twitter等联系方式
 
 
 
