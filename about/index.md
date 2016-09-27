@@ -1,8 +1,8 @@
 ---
 layout: page
 title: 关于柳钰柯
-tags: [about,contact, ]
-date: 2016-03-21
+tags: [about,contact]
+date: 2016-09-26
 comments: false
 ---
     
@@ -13,6 +13,9 @@ comments: false
 
 ## 联系
 * 联系请点击首页邮箱、Twitter等联系方式
+
+## 关于评论
+* 由于技术原因，用的是第三方的评论工具。在博文下面可以进行评论，可以登录facebook、twitter、google账号等进行评论。或者点击I'd rather post as a guest，但是需要输入用户名和邮箱，方便我回信。
 
 
 
