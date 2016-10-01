@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "利用github page + jekyll 搭建个人博客"
-date: 2016-09-26
+date: 2016-09-30
 excerpt: "Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服务，站点可以被免费托管在Github 上，你可以选择使用Github Pages 默认提供的域名github.io 或者自定义域名来发布站点。"
-tags: [博客,GitHub Page]
 project: true
+tag: 
+- 博客
+- GitHub Page
+comments: true
 ---
 # 利用github page + jekyll 搭建个人博客
 Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服务，站点可以被免费托管在Github 上，你可以选择使用Github Pages 默认提供的域名github.io 或者自定义域名来发布站点。
