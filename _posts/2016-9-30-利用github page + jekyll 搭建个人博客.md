@@ -120,11 +120,11 @@ $ git config --global user.email "your_email@youremail.com"
 点击Demo可以预览模板，我们利用模板建立的页面就和Demo展示的一样。
 
 * 选择自己喜欢的页面之后，点击下载（Download）。
-* 要想利用下载好后的模板，需要把我们的github上的文件拉到本地，可以利用Terminal（终端）进行拉去，也可利用GitHub Desktop进行，推荐使用Desktop进行拉取，方便快捷。[GitHub Desktop下载戳此](https://desktop.github.com)
+* 要想利用下载好后的模板，需要把我们的github上的文件拉到本地。可以利用Terminal（终端）进行拉去，也可利用GitHub Desktop进行，推荐使用Desktop进行拉取，方便快捷。[GitHub Desktop下载戳此](https://desktop.github.com)
 * 下载安装完成后，登录我们的github账号，点击+号->clone 选择我们刚刚建立的仓库username.github.io
 ![](../assets/img/2016-09-30-利用github page + jekyll 搭建个人博客/Snip20161001_26.png)
 点击后，会让我们选择存放文件夹，按自己喜好选择。为了方便，我存放在桌面。
-* 克隆下来之后，我们需要，把文件夹里面的所有数据删除**注意不要将隐藏文件删除**，将刚才下载的模板文件解压到此文件夹。
+* 克隆下来之后，我们需要把文件夹里面的所有数据删除**注意不要将隐藏文件删除**，将刚才下载的模板文件解压到此文件夹。
 * 解压后，发现我们的本地仓库多了很多Changes，输入描述之后（红框部分）点击Commit to master
 ![](../assets/img/2016-09-30-利用github page + jekyll 搭建个人博客/Snip20161001_28.png)
 * 点击Sync同步到github,同步时间长短根据网络状态好坏而定。
@@ -231,6 +231,8 @@ project:true
 
 ## 最后
 如果需要将我们的博客地址绑定到我们的独立域名，只需要购买域名后绑定到我们的GitHub Page即可。写了这么多，希望能帮到大家。才刚开始维护自己的博客，内容可能不够详实，有所错误。欢迎指正，联系邮箱在博客首页[我的博客地址](larrycode.cc)
+
+参考博客：[使用Github Pages建独立博客](http://beiyuu.com/github-pages)
 
 
 
