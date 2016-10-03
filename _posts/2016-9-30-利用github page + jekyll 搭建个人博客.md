@@ -11,9 +11,11 @@ comments: true
 ---
 
 # 利用github page + jekyll 搭建个人博客
+
 Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服务，站点可以被免费托管在Github 上，你可以选择使用Github Pages 默认提供的域名github.io 或者自定义域名来发布站点。
 
 ## 说明
+
 * 本文章仅做参考，每个人遇到的问题不一样，解决方法也不一样。请善用谷歌。
 * 博客的主要目的不在于搭建，而在于坚持不懈的更新。
 * 博主用的是MAC电脑，示例以OS X系统为准，windows系统操作也大致相同。
@@ -33,10 +35,12 @@ Github Pages 是面向用户、组织和项目开放的公共静态页面搭建�
 > * 基于Git，很多东西需要动手，不像Wordpress有强大的后台
 
 ## 关于SSH Key
+
 >SSH keys (简体中文) SSH 密钥对可以让您方便的登录到SSH 服务器，而无需输入密码。 由于您无需发送您的密码到网络中，SSH 密钥对被认为是更加安全的方式。 再加上使用密码短语(passphrase) 的使用，安全性会更上一层楼。
 
 
 ### 1、检查SSH Key
+
 * 在终端中输入
 ```cd ~/.ssh
 ```
@@ -44,6 +48,7 @@ Github Pages 是面向用户、组织和项目开放的公共静态页面搭建�
 如果显示的是```No such file or directory```,则进行第三步；不是则执行第二步。
 
 ### 2、备份和移除原来的SSH Key设置
+
 如果已经存在SSH Key的话，就需要对其进行备份并删除原有文件。
 ```
 $ ls
@@ -55,6 +60,7 @@ $ rm id_rsa*
 如图所示：![备份和移除SSH Key](../assets/img/2016-09-30-利用github page + jekyll 搭建个人博客/Snip20161001_2.png)
 
 ### 3、生成新的SSH Key
+
 备份并移除旧的SSH Key之后，就可以生成新的SSH Key
 ```
 $ ssh-keygen -t rsa -C "邮件地址@youremail.com"
@@ -67,6 +73,7 @@ Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):<�
 ![成功生成SSH Key](../assets/img/2016-09-30-利用github page + jekyll 搭建个人博客/Snip20161001_5.png)
 
 ### 4、将新生成的SSH Key添加到github
+
 * 首先进入github登录，点击个人头像->setting
 ![进入设置界面](../assets/img/2016-09-30-利用github page + jekyll 搭建个人博客/Snip20161001_6.png)
 
@@ -82,6 +89,7 @@ Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):<�
 ![添加Key](../assets/img/2016-09-30-利用github page + jekyll 搭建个人博客/Snip20161001_10.png)
 
 ### 5、检测是否成功添加SSH Key
+
 添加成功后在终端中输入`$ ssh -T git@github.com`来测试是否添加成功
 如果出现```The authenticity of host 'github.com (207.97.227.239)' can't be established.
 RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
@@ -89,6 +97,7 @@ Are you sure you want to continue connecting (yes/no)?
 ```输入YES就行。看到`Hi <em>username</em>! You've successfully authenticated, but GitHub does not provide shell access.`就代表成功了。
 
 ### 6、添加成功后的设置
+
 添加SSH Key 成功后，需要输入：
 ```
 $ git config --global user.name "你的名字"
@@ -97,6 +106,7 @@ $ git config --global user.email "your_email@youremail.com"
 名字输入真名，邮箱输入github的邮箱。当你提交本地文件的时候，git会根据用户的名字和邮箱来记录提交，同时也是权限处理。
 
 ## 利用github page生成自己的博客
+
 * 当连接好github之后，我们可以在github上建立自己的仓库。点击头像旁边的+号，选择new repository
 
 ![](../assets/img/2016-09-30-利用github page + jekyll 搭建个人博客/Snip20161001_11.png)
@@ -117,6 +127,7 @@ $ git config --global user.email "your_email@youremail.com"
 *至此，我们的github page已经配置完成* 我们可以点击`https://username.github.io/username.github.io/`访问自己的页面。
 
 ## 利用Jekyll模板
+
 * 配置完成github page 之后，我们需要对页面重新进行排版。我们可以在[Jekyll模板站](http://jekyllthemes.org/)中找到自己喜欢的模板。例如我的是：[Moon](http://jekyllthemes.org/themes/moon/)，点击进入后，会有一些模板的介绍。
 ![](../assets/img/2016-09-30-利用github page + jekyll 搭建个人博客/Snip20161001_24.png)
 点击Demo可以预览模板，我们利用模板建立的页面就和Demo展示的一样。
@@ -134,6 +145,7 @@ $ git config --global user.email "your_email@youremail.com"
 * 同步完成之后，再次进入我们的博客页面，发现我们的博客变成了和模板一模一样。接下来要做的就是修改模板，使其变成我们的博客。
 
 ## Jekyll结构说明
+
 Jekyll 的核心是一个文本转换引擎。它的核心是把你零散的文件、文本组合起来，形成一个个网页，最终呈现在浏览器上展现出来。
 
 一个最基础的 Jekyll 博客，会拥有下面的目录结构：
@@ -177,6 +189,7 @@ Jekyll 的核心是一个文本转换引擎。它的核心是把你零散的文�
 更多详细的内容请参考[jekyll帮助文档](http://jekyllrb.com/docs/configuration/)。
 
 ## 更改我们的模板
+
 我们下载好的模板，上述东西都具有，`_site`文件夹除外。在我们下载的模板中，一般都会有详细的模板说明，怎么将模板更改成我们自己的。这里我就用我的模板（Moon）来举例。
 用文本编辑器或者sublime text打开`_config.yml`
 
@@ -194,6 +207,7 @@ Jekyll 的核心是一个文本转换引擎。它的核心是把你零散的文�
 **还有更多的模板文件修改，请自行参考模板说明**
 
 ## 添加我们的博客
+
 * 博客文件需要用markdown进行写作，通过文件命名也有严格的规范，一般以日期+博客标题命名。例如：2016-9-30-如何利用GitHub Page + Jekyll搭建自己的博客.md
 * 在文档开头，需要添加
 
@@ -229,9 +243,11 @@ project:true
 ```
 
 ## 上传我们的博文
+
 当博文写完之后，我们将md文件放在`_posts`文件夹中，这个文件夹专门用于存放博文。然后在GitHub Desktop中commit并同步，我们就可以在GitHub Page中看到我们写的博文啦！
 
 ## 最后
+
 如果需要将我们的博客地址绑定到我们的独立域名，只需要购买域名后绑定到我们的GitHub Page即可。写了这么多，希望能帮到大家。才刚开始维护自己的博客，内容可能不够详实，有所错误。欢迎指正，联系邮箱在博客首页[我的博客地址](larrycode.cc)
 
 参考博客：[使用Github Pages建独立博客](http://beiyuu.com/github-pages)
