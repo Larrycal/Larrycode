@@ -9,8 +9,10 @@ tag:
 - GitHub Page
 comments: true
 ---
+
 # 利用github page + jekyll 搭建个人博客
 Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服务，站点可以被免费托管在Github 上，你可以选择使用Github Pages 默认提供的域名github.io 或者自定义域名来发布站点。
+
 ## 说明
 * 本文章仅做参考，每个人遇到的问题不一样，解决方法也不一样。请善用谷歌。
 * 博客的主要目的不在于搭建，而在于坚持不懈的更新。
