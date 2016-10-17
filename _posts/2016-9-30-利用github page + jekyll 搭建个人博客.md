@@ -8,6 +8,7 @@ tag:
 - 博客
 - GitHub Page
 comments: true
+feature: ../assets/img/feature.jpg
 ---
 
 # 利用github page + jekyll 搭建个人博客
